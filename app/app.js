@@ -27,6 +27,8 @@ class App extends React.Component {
             </Col>
             <Col xs={3} md={2}>
               <SomeDiv/>
+              <SomeDiv/>
+              <SomeDiv/>
             </Col>
           </Row>
         </Grid>
