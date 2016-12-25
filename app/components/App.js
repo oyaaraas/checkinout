@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './modules/Navigation';
+import Navigation from './modules/Navigation';
 
 const App = (props) => {
   return (
     <div className="page">
-      <Navbar/>
+      <Navigation/>
       {props.children}
     </div>
   );

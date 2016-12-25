@@ -1,34 +1,33 @@
 import React from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
-import { Link } from 'react-router';
+import {LinkContainer} from 'react-router-bootstrap';
 
 class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">checkinout</Link>
+              <a href="/">checkinout</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem>
-              <Link to="/profile">Profil</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/login">Logg inn</Link>
-            </NavItem>
+            <LinkContainer to="/profile">
+              <NavItem>
+                Profil
+              </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/login">
+              <NavItem>
+                Logg inn
+              </NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
   }
 }
-
 export default Navigation;
