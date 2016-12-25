@@ -1,14 +1,18 @@
 import 'babel-polyfill';
 import React from 'react';
 import './styles/main.scss';
+
+
 import {Jumbotron, Button, PageHeader, Grid, Row, Col} from 'react-bootstrap';
 import SomeDiv from './somediv';
 import Navbar from './navigation-bar';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import {Router, Route, browserHistory }from 'react-router';
+
+const App = () => (
+  <Router history={ browserHistory}>
+    <Route path="/(:url)" component="{}"></Route>
+)
 
   render() {
     return (
