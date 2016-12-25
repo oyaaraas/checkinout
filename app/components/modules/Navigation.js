@@ -2,7 +2,7 @@ import React from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import { Link } from 'react-router';
 
-class NavigationBar extends React.Component {
+class Navigation extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -31,4 +31,4 @@ class NavigationBar extends React.Component {
   }
 }
 
-export default NavigationBar;
+export default Navigation;

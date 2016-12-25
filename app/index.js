@@ -1,10 +1,13 @@
 import 'babel-polyfill';
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDOM from 'react-dom';
 import './styles/main.scss';
-import App from './app';
+import Root from './components/Root';
 
-render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+  <Root/>,
+  document.getElementById('root')
+);
 
 if (module.hot) {
   module.hot.accept();
