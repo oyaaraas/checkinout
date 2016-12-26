@@ -7,7 +7,7 @@
     "test": "",
     "start": "node server",
     "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "deploy": "copyfiles CNAME dist && surge",
+    "deploy": "copyfiles CNAME dist && cd dist && surge",
     "lint": "eslint ."
   },
   "repository": {

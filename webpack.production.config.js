@@ -31,6 +31,11 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: 'app/index.tpl.html',
+      inject: 'body',
+      filename: '200.html'
+    }),
     // extracts the css from the js files and puts them on a separate .css file. this is for
     // performance and is used in prod environments. Styles load faster on their own .css
     // file as they dont have to wait for the JS to load.
